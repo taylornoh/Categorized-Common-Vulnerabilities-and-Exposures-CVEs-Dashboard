@@ -1,19 +1,19 @@
 # Categorized-Common-Vulnerabilities-and-Exposures-CVEs-Dashboard
 Our project bridges the gap between common vulnerabilities and the public with a live dashboard on AWS. Users access recent vulnerabilities from tech giants, with real-time updates and solutions. AWS facilitates data collection via Amazon S3 and stores info in DynamoDB.
 
-**Project Deliverables:**
+*Project Deliverables:*
 
 * AWS: As the core clouding platform, AWS will be responsible for data storage, computing, and hosting our dashboard.
 * Amazon DynamoDB: This will serve as our primary database, storing a catalog of vulnerabilities reported by different companies.
 * Amazon S3: Leveraged as the primary hosting solution for our static website which will fetch and display the data.
 
-**Skills Needed:**
+*Skills Needed:*
 
 * JSON Web Service: Required for handling and parsing data from vulnerability reports.
 * SQL: Essential for managing, querying, and maintaining the DynamoDB.
 * PHP/JS: Necessary for website development and ensuring dynamic data representation on the frontend.
 
-**10 Weeks Plan/Schedule:**
+*10 Weeks Plan/Schedule:*
 
 Week 1-2: Project Initialization
 
@@ -55,7 +55,7 @@ Week 10: Finalization & Deployment
 * Deployment of the website on Amazon S3.
 * Documentation and report preparation.
 
-**Task Allocation within Group Members:**
+*Task Allocation within Group Members:*
 
 * AWS & Database Management:
 * Member A: In charge of setting up AWS, DynamoDB configuration, and ensuring data integrity.

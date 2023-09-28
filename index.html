@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display vulnerabilities</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Display vulnerabilities</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Company</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="vulnerabilitiesTable">
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        // data right here
+        let data = {
+            "title": "CISA Catalog of Known Exploited Vulnerabilities",
+            "catalogVersion": "2023.09.06",
+            "vulnerabilities": [
+                // the data 
+            ]
+        };
+
+
+        function displayData() {
+            let companyVulnerabilities = {};
+
+            data.vulnerabilities.forEach(vul => {
+                let company = vul.vendorProject;
+                if (companyVulnerabilities[company]) {
+                    companyVulnerabilities[company]++;
+                } else {
+                    companyVulnerabilities[company] = 1;
+                }
+            });
+
+            let tableBody = document.getElementById('vulnerabilitiesTable');
+            for (let company in companyVulnerabilities) {
+                let row = tableBody.insertRow();
+                let cell1 = row.insertCell(0);
+                let cell2 = row.insertCell(1);
+                cell1.textContent = company;
+                cell2.textContent = companyVulnerabilities[company];
+            }
+        }
+
+        displayData();
+
+    </script>
+</body>
+</html>

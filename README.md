@@ -2,11 +2,11 @@
 
 Our project bridges the gap between common vulnerabilities and the public with a live dashboard on AWS. Users access recent vulnerabilities from tech giants, with real-time updates and solutions. AWS facilitates data collection via Amazon S3 and stores info in DynamoDB.
 
-Nick Sabater		-	nsabater2022@csu.fullerton.edu  
-Taylor Noh		-	taylornoh@csu.fullerton.edu  
-Gina Lee		-	ginnaaleee@csu.fullerton.edu  
-Hongfei Wang	-	wanghf0914@csu.fullerton.edu  
-Rodolfo Hernandez	-	rodolfoh@csu.fullerton.edu  
+* Nick Sabater		-	nsabater2022@csu.fullerton.edu  
+* Taylor Noh		-	taylornoh@csu.fullerton.edu  
+* Gina Lee		-	ginnaaleee@csu.fullerton.edu  
+* Hongfei Wang	-	wanghf0914@csu.fullerton.edu  
+* Rodolfo Hernandez	-	rodolfoh@csu.fullerton.edu  
 
 ## Project Deliverables:
 

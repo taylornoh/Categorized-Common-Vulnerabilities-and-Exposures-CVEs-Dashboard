@@ -57,7 +57,7 @@ Week 10: Finalization & Deployment
 
 ## Task Allocation within Group Members:
 
-* AWS & Database Management:
+AWS & Database Management:
 * Member A: In charge of setting up AWS, DynamoDB configuration, and ensuring data integrity.
 
 Data Ingestion & Processing:

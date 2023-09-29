@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Auto Scroll Page</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #4caf00;
+    padding: 14px 0;
+  }
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  .button-container {
+    background-color: #ffffff; /* Rectangle background color */
+    border: 2px solid #000000; /* Rectangle border color */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  .button-container a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  .section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+  }
+  #section1 {
+    background-color: #e3f2fd;
+  }
+  #section2 {
+    background-color: #bbdefb;
+  }
+  #section3 {
+    background-color: #90caf9;
+  }
+  #section4 {
+    background-color: #64b5f6;
+  }
+</style>
+</head>
+<body>
+<div class="navbar">
+  <div class="button-container" onclick="scrollToElement('section1')"><a href="#section1">Button 1</a></div>
+  <div class="button-container" onclick="scrollToElement('section2')"><a href="#section2">Button 2</a></div>
+  <div class="button-container" onclick="scrollToElement('section3')"><a href="#section3">Button 3</a></div>
+  <div class="button-container" onclick="scrollToElement('section4')"><a href="#section4">Button 4</a></div>
+</div>
+<div id="section1" class="section">Part 1</div>
+<div id="section2" class="section">Part 2</div>
+<div id="section3" class="section">Part 3</div>
+<div id="section4" class="section">Part 4</div>
+
+<script>
+function scrollToElement(elementId) {
+  const element = document.getElementById(elementId);
+  element.scrollIntoView({behavior: 'smooth'});
+}
+</script>
+</body>
+</html>

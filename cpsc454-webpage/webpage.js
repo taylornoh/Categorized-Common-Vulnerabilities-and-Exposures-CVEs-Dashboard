@@ -8,8 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let targetId = this.getAttribute('href').substring(1); 
         let targetElement = document.getElementById(targetId); 
         
-        targetElement.scrollIntoView({ behavior: 'smooth' });
-
+        targetElement.scrollIntoView({ behavior: 'smooth' }); 
       });
     });
   });

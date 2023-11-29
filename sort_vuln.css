@@ -1,0 +1,205 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-image: url('https://www.careyolsen.com/sites/default/files/Corporate_18.png'); 
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5em;
+  }
+  
+  .search-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  #companyName {
+    width: 300px;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #results {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .vulnerability {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .vulnerability h2 {
+    color: #007bff;
+    margin: 0 0 10px 0;
+  }
+  
+  .vulnerability p {
+    margin: 5px 0;
+  }
+
+  .page-title {
+
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .search-container {
+ 
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .search-input {
+
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .search-button {
+
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background-color: #45a049;
+  }
+  
+  .results-container {
+
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .vulnerability-frame {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #fff; 
+  }
+  
+  .vulnerability-company {
+    color: #1a1a1a;
+    margin-bottom: 10px;
+  }
+  
+  .vulnerability-name {
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .vulnerability-product,
+  .vulnerability-description,
+  .vulnerability-id {
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+
+.company-list {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.company-name {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 5px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.company-name:hover {
+  background-color: #e2e2e2;
+}
+
+  
+
+/* Styles for product buttons */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.product-list button {
+  background-color: #70eff1; /* Primary button color */
+  border: none;
+  border-radius: 5px;
+  color: white; /* Text color */
+  cursor: pointer;
+  font-size: 14px;
+  margin: 5px; /* Spacing between buttons */
+  padding: 10px 15px; /* Button padding */
+  text-transform: uppercase; /* Uppercase text */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.product-list button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Styles for displaying company and product names on buttons */
+.company-name, .product-name {
+  font-weight: bold; /* Bold text for emphasis */
+}
+
+/* Override styles for company list to make it consistent with product buttons */
+.company-list span.company-name {
+  background-color: #007bff;
+  border-radius: 5px;
+  color: white;
+  margin: 5px;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.company-list span.company-name:hover {
+  background-color: #0056b3;
+}

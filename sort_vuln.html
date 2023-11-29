@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vulnerability Search</title>
+  <link rel="stylesheet" href="sort_vuln.css"> <!-- Adjust the href as needed -->
+  <a href="webpage_update.html">Back to Main Page</a>
+  <script src="sort_vuln.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1 class="page-title">Find vulnerabilities through the company</h1>
+  </header>
+  <div class="search-container">
+    <input type="text" id="companyName" class="search-input" placeholder="Enter Company Name"/>
+    <button class="search-button" onclick="searchVulnerabilities()">Search</button>
+  </div>
+  <div id="company-list" class="company-list"></div>
+  <div id="product-list" class="product-list"></div>
+  <div id="product-list" class="product-list"></div>
+  <div id="results" class="results-container"></div>
+  <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,3 +1,11 @@
+let access_key = "cpsc454";
+let value = prompt("Enter the access key to view this content:")
+
+if (value !== access_key) {
+  window.location.replace("./webpage_update.html");
+}
+
+
 async function searchVulnerabilities() {
   const companyName = document.getElementById('companyName').value.trim().toLowerCase();
   const companiesContainer = document.getElementById('company-list');

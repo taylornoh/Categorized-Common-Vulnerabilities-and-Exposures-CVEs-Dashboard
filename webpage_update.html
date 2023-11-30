@@ -1,129 +1,177 @@
-
-<head>
-  <link rel="stylesheet" href="webpage.css">
-  <script src="webpage.js" defer></script>
-</head>
-
-
-<body>
-  <nav>
-      <ul>       
-       <li><a href="#Company_List">Company List</a></li>         
-       <li><a href="#vulnerability">Vulnerability</a></li>   
-       <li><a href="#model">Model</a></li> 
-       <li><a href="About">About</a></li> 
-       
-      </ul>
-       <li><a href="graph.html">graph</a></li>
-        
-        
-      </ul>
-  </nav>
-    
-
-  
-  <section class="welcome">
-    <h1>Categorized Common Vulnerabilities </h1>
-    <h1>  and Exposures (CVEs) Dashboard </h1>
-  </section>
-  
-  <section class="Company_List" id="Company_List">
-    <div class="container">
-      <h2>Company List</h2>
-      <div class="grid-full">
-        <div class="grid-product">
-          <a href="sort_vuln.html">
-            <img src="https://www.careyolsen.com/sites/default/files/Corporate_18.png">
-            <div class="grid-detail">
-              <p><a href="sort_vuln.html" class="vendor-name-link">Vendor Name</a></p>
-            </div>
-          </a>
-        </div>
-        <div class="grid-product">
-          <img src="https://www.marketing91.com/wp-content/uploads/2020/02/Introduction-to-the-Product-Quality.jpg">
-          <div class="grid-detail">
-            <p></p>
-            <p>Product</p>
-          </div>
-        </div>
-  </section>
-      
-<section class="model" id="model">
-    <div class="container">
-      <h2>Model</h2>
-      <div class="grid-full">
-        <div class="grid-product">
-          <img src="https://i.imgur.com/XpRzIWV.jpg">
-          <div class="grid-detail">
-            <p></p>
-            <p>Risk Model</p>
-          </div>
-        </div>
-        <div class="grid-product">
-          <img src="https://media.istockphoto.com/id/464576790/photo/businessman-holding-a-glass-ball.jpg?s=612x612&w=0&k=20&c=qSXJb01pr9QxiJQLNp8fhInNez-QfvtWfS0dzvwQ1S8=">
-          <div class="grid-detail">
-            <p></p>
-            <p>prediction model</p>
-          </div>
-        </div>
-  </section>
-  
-  
-  <section class="Vulnerability" id="vulnerability">
-    <div class="container">
-      <h2>Vulnerability</h2>
-      <div class="grid">
-        <div class="grid-product">
-          <img src="https://i.imgur.com/e4fwNqV.jpg">
-          <div class="grid-detail">
-            <p></p>
-            <p>Vulnerability Type</p>
-          </div>
-        </div>
-
-        <div class="grid-product">
-          <img src="https://www.tenable.com/sites/default/files/styles/640x360/public/images/articles/5%20Tips%20for%20Prioritizing%20Vulnerabilities%20Based%20on%20Risk.jpg?itok=gjk0e-oc">
-          <div class="grid-detail">
-            <p></p>
-            <p>Vulnerability Level</p>
-          </div>
-        </div>
-        
-        <div class="grid-product">
-          <img src="https://www.shutterstock.com/shutterstock/videos/1091190731/thumb/1.jpg?ip=x480">
-          <div class="grid-detail">
-            <p></p>
-            <p>Publication Date</p>
-          </div>
-        </div>
-      </div> <!--end grid-->
-    </div> <!--end container-->
-  </section>
-  
-  
-  
-  
-  <footer>
-    <div class="footer-main">
-      <div class="footer-detail">
-      </div> <!-- end footer detail -->
-      
-      <div class="footer-welcome">
-        <i class="fas fa-chevron-right"></i>
-      </div> <!-- end footer-welcome -->
-      
-      <div class="footer-ul">
-        <ul>
-         </li>
-         </li>
-          <li><h4>Cybersecurity and Infrastructure Security Agency</h4></li>
-          <li><a href="#"> About</a></li>
-          <li><a href="#">Accessibility</a></li>
-      <li><a href="#">Education</a>        
-      </li>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CVE Dashboard</title>
+    <link rel="stylesheet" href="webpage.css">
+    <script src="webpage.js" defer></script>
+  </head>
+  <body>
+    <nav>
+        <ul>       
+          <li><a href="#Company_List">Companies & Vulnerabilities</a></li>         
+          <li><a href="#vulnerabilities">Vulnerability List</a></li>   
+          <li><a href="#about">About the Project</a></li> 
         </ul>
+    </nav>
+
+    <section class="welcome">
+      <div class="welcome-text-wrapper">
+        <h1>Categorized Common Vulnerabilities</h1>
+        <h1>and Exposures (CVEs) Dashboard </h1>
       </div>
-        <div class="vr"></div>
-    </div>
-  </footer>
-</body>
+    </section>
+    
+    <section class="Company_List" id="Company_List">
+      <div class="container">
+        <h2>Companies & Vulnerabilities</h2>
+        <div class="grid-full">
+          <div class="grid-product">
+            <a href="./graph.html">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Big_Tech_collage_2022.png">
+              <div class="grid-detail">
+                <p><a href="./graph.html" class="vendor-name-link">Top 20 Companies by Vulnerabilities</a></p>
+              </div>
+            </a>
+          </div>
+          <div class="grid-product">
+            <a href="./sort_vuln.html">
+              <img src="https://static.vecteezy.com/system/resources/previews/005/948/423/non_2x/entomology-icon-isolated-on-white-background-bug-in-a-magnifying-glass-free-vector.jpg">
+              <div class="grid-detail">
+                <p><a href="./sort_vuln.html" class="vendor-name-link">Search Company Vulnerabilities</a></p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="vulnerabilities" id="vulnerabilities">
+      <div class="container">
+        <h2>Top Vulnerabilities</h2>
+        <table class="vulnerabilities-table">
+          <tbody>
+            <tr>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Allowing_Domains_or_Accounts_to_Expire">Allowing Domains or Accounts to Expire</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Buffer_Overflow">Buffer Overflow</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Business_logic_vulnerability">Business logic vulnerability</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/CRLF_Injection">CRLF Injection</a></td>
+            </tr>
+            <tr>
+              <td><a href="https://owasp.org/www-community/attacks/CSV_Injection">CSV Injection</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Catch_NullPointerException">Catch NullPointerException</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Covert_storage_channel">Covert storage channel</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Deserialization_of_untrusted_data">Deserialization of untrusted data</a></td>
+            </tr>
+            <tr>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Directory_Restriction_Error">Directory Restriction Error</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Doubly_freeing_memory">Doubly freeing memory</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Empty_String_Password">Empty String Password</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Expression_Language_Injection">Expression Language Injection</a></td>
+            </tr>
+            <tr>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Full_Trust_CLR_Verification_issue_Exploiting_Passing_Reference_Types_by_Reference">Full Trust CLR Verification issue Exploiting Passing Reference Types by Reference</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Heartbleed_Bug">Heartbleed Bug</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Improper_Data_Validation">Improper Data Validation</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Improper_pointer_subtraction">Improper pointer subtraction</a></td>
+            </tr>
+            <tr>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Information_exposure_through_query_strings_in_url">Information exposure through query strings in url</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Injection_problem">Injection problem</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Insecure_Compiler_Optimization">Insecure Compiler Optimization</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Insecure_Randomness">Insecure Randomness</a></td>
+            </tr>
+            <tr>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Insecure_Temporary_File">Insecure Temporary File</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Insecure_Third_Party_Domain_Access">Insecure Third Party Domain Access</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Insecure_Transport">Insecure Transport</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Insufficient_Entropy">Insufficient Entropy</a></td>
+            </tr>
+            <tr>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Insufficient_Session-ID_Length">Insufficient Session-ID Length</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Least_Privilege_Violation">Least Privilege Violation</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Memory_leak">Memory leak</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Missing_Error_Handling">Missing Error Handling</a></td>
+            </tr>
+            <tr>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Missing_XML_Validation">Missing XML Validation</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Multiple_admin_levels">Multiple admin levels</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Null_Dereference">Null Dereference</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/OWASP_NET_Vulnerability_Research">OWASP .NET Vulnerability Research</a></td>
+            </tr>
+            <tr>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Overly_Permissive_Regular_Expression">Overly Permissive Regular Expression</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/PHP_File_Inclusion">PHP File Inclusion</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/PHP_Object_Injection">PHP Object Injection</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/PRNG_Seed_Error">PRNG Seed Error</a></td>
+            </tr>
+            <tr>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Password_Management_Hardcoded_Password">Password Management Hardcoded Password</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Password_Plaintext_Storage">Password Plaintext Storage</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Poor_Logging_Practice">Poor Logging Practice</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Portability_Flaw">Portability Flaw</a></td>
+            </tr>
+            <tr>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Privacy_Violation">Privacy Violation</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Process_Control">Process Control</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Return_Inside_Finally_Block">Return Inside Finally Block</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Session_Variable_Overloading">Session Variable Overloading</a></td>
+            </tr>
+            <tr>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/String_Termination_Error">String Termination Error</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Unchecked_Error_Condition">Unchecked Error Condition</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Unchecked_Return_Value_Missing_Check_against_Null">Unchecked Return Value Missing Check against Null</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Undefined_Behavior">Undefined Behavior</a></td>
+            </tr>
+            <tr>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Unreleased_Resource">Unreleased Resource</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Unrestricted_File_Upload">Unrestricted File Upload</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Unsafe_JNI">Unsafe JNI</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Unsafe_Mobile_Code">Unsafe Mobile Code</a></td>
+            </tr>
+            <tr>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Unsafe_function_call_from_a_signal_handler">Unsafe function call from a signal handler</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Unsafe_use_of_Reflection">Unsafe use of Reflection</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Use_of_Obsolete_Methods">Use of Obsolete Methods</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Use_of_hard-coded_password">Use of hard-coded password</a></td>
+            </tr>
+            <tr>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Using_a_broken_or_risky_cryptographic_algorithm">Using a broken or risky cryptographic algorithm</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Using_freed_memory">Using freed memory</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/Vulnerability_template">Vulnerability template</a></td>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/XML_External_Entity_(XXE)_Processing">XML External Entity (XXE) Processing</a></td>
+            </tr>
+            <tr>
+              <td><a href="https://owasp.org/www-community/vulnerabilities/follina">The Follina Vulnerability - A Critical Threat to Microsoft Office</a></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <h2>About the Project</h2>
+        <div class="about-subsection">
+          <h3>Description</h3>
+          <p>Our project bridges the gap between common vulnerabilities and the public with a live dashboard on AWS. Users access recent vulnerabilities from tech giants, with real-time updates and solutions. AWS facilitates data collection via Amazon S3 and stores info in DynamoDB. As the core clouding platform, AWS is responsible for data storage, computing, and hosting our dashboard. Amazon DynamoDB serves as our primary database, storing a catalog of vulnerabilities reported by different companies. Amazon S3 is leveraged as the primary hosting solution for our static website which will fetch and display the data.</p>
+        </div>
+        <div class="about-subsection">
+          <h3>Meet the Team</h3>
+          <ul>
+            <li>Taylor Noh - <a href="mailto:taylornoh@csu.fullerton.edu">taylornoh@csu.fullerton.edu</a></li>
+            <li>Nick Sabater - <a href="mailto:nsabater2022@csu.fullerton.edu">nsabater2022@csu.fullerton.edu</a></li>
+            <li>Hongfei Wang - <a href="mailto:wanghf0914@csu.fullerton.edu">wanghf0914@csu.fullerton.edu</a></li>
+            <li>Rodolfo Hernandez - <a href="mailto:rodolfoh@csu.fullerton.edu">rodolfoh@csu.fullerton.edu</a></li>
+            <li>Gina Lee - <a href="mailto:ginnaaleee@csu.fullerton.edu">ginnaaleee@csu.fullerton.edu</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
